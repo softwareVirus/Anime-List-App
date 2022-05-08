@@ -10,7 +10,7 @@ function Login({setProfile}) {
     const [errorMessage,setErrorMessage] = useState('');
     const handleLogin = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:5000/u/login',{
+        axios.post('https://anime-sed.herokuapp.com/u/login',{
             "email":e.target.email.value,
             "password":e.target.password.value
         })
