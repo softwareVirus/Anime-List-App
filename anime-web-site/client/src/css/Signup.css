@@ -1,0 +1,33 @@
+.container-form input {
+    margin-bottom: 8px;
+}
+
+.container-form form {
+    padding: 45px 45px;
+    margin-top: 15px;
+    border: solid 1px black;
+    border-radius: 10px;
+    box-shadow: 15px 15px ;
+}
+
+
+.container-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-form .submit {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.submit > input {
+    color:white;
+    background-color: black;
+    cursor: pointer;
+}

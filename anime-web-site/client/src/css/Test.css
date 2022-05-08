@@ -1,0 +1,139 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.logo > .link-text {
+    font-size: large;
+}
+
+li {
+    list-style-type: none;
+    margin-left: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+ul {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 46px;
+    margin: 0 0;
+}
+
+.link-text {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    background-color: black;
+    height: 50px;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.signup {
+    margin-left: 10px;
+    padding: 0 5px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.login {
+    margin-left: 10px;
+    padding: 0 9px;
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.login:hover ,li:hover,.logo:hover{
+    background-color: white;
+    transition: ease-in 0.15s all;
+}
+.login-link:hover, .link-text:hover{
+    color: black;
+}
+
+.signup-link:hover {
+    color: white;
+    transition: ease-in 0.15s all;
+}
+
+.signup:hover {
+    background-color: black;
+    transition: ease-in 0.3s all;
+}
+
+.signup-link {
+    color: black;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-link {
+    color: white;
+    width: 100%;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-i {
+    color: white;
+    display: flex;
+    align-items: center;
+    border: solid 1px white;
+    padding: 2px 2px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.profile-i:hover {
+    background-color: white;
+    color: black;
+    transition: ease-in 0.3s all;
+}
+
+.profile-i > img {
+    margin-right: 4px;
+}

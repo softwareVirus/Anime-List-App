@@ -1,0 +1,22 @@
+.home-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://www.hdwallpapers.in/download/yoriichi_tsugikuni_demon_slayer_kimetsu_no_yaiba_hd_demon_slayer_kimetsu_no_yaiba-HD.jpg');
+    box-sizing: border-box;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 42vw;
+    margin-top: 0;
+    background-size: 100%;
+}
+
+.home-container > div {
+    width: 30%;
+    word-wrap: break-word;
+    color: white;
+    padding-top: 2%;
+    padding-right: 3%;
+    float: right;
+}
+
+.home-container > div > h1 {
+    font-size: 4vw;
+}
