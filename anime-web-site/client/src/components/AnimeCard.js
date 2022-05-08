@@ -8,7 +8,7 @@ const AnimeCard = (props) => {
         e.preventDefault()
         console.log(e.target.delete)
         if(e.target.value === "Add List") 
-            axios.post('http://localhost:5000/u/addAnimeToMyList',{
+            axios.post('https://anime-sed.herokuapp.com/u/addAnimeToMyList',{
                 "user":props.user,
                 "_id":props._id,
                 "image":props.image,
@@ -20,7 +20,7 @@ const AnimeCard = (props) => {
             .catch(err => console.log(err))
         else {
             console.log("hello",props)
-            axios.delete('http://localhost:5000/u/deleteAnimeToMyList',{
+            axios.delete('https://anime-sed.herokuapp.com/u/deleteAnimeToMyList',{
                 headers:{
                     "name":props.name,
                     "e_mail":props.user.email
