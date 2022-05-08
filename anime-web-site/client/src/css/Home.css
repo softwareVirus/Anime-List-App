@@ -20,3 +20,7 @@
 .home-container > div > h1 {
     font-size: 4vw;
 }
+
+.home-container > div > p {
+    font-size: 2vw;
+}
