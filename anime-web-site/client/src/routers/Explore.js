@@ -28,7 +28,7 @@ function Explore({profile}) {
         }))
     }
     useEffect(()=>{
-        axios.get('http://localhost:5000/u/getAllInfos')
+        axios.get('https://anime-sed.herokuapp.com/u/getAllInfos')
         .then(response => {console.log(response.data,data);setData(response.data);setAnimeInfos((response.data))})
         .catch(err => console.log(err))
     },[])
