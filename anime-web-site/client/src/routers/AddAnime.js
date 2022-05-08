@@ -67,7 +67,7 @@ export default function AddAnime() {
         if(parseFloat(e.target.point.value) > 10) {
             setErrMes("The point value must be less equal to 10")
         }
-        axios.post('http://localhost:5000/u/addAnimeCard',{
+        axios.post('https://anime-sed.herokuapp.com/u/addAnimeCard',{
             "src" :url.src,
             "alt":url.alt === undefined ? "anime-photo" : url.alt,
             "name": e.target.name.value,
