@@ -3,7 +3,7 @@
     box-sizing: border-box;
     width: 100%;
     background-repeat: no-repeat;
-    height: 46vw;
+    height: 4.8vw;
     margin-top: 0;
     background-size: 100%;
 }
@@ -12,7 +12,7 @@
     width: 30%;
     word-wrap: break-word;
     color: white;
-    padding-top: 2%;
+    padding-top: 6%;
     padding-right: 3%;
     float: right;
 }
