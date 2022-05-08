@@ -1,0 +1,37 @@
+.container-explore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 15px auto;
+}
+
+.anime-lists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.search-and-sort {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sort-point,.sort-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-top:15px;
+    font-size: 0.8rem;
+}
+.sort-name {
+    border-right: 1px solid white;
+}
