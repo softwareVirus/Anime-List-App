@@ -8,7 +8,7 @@ function Home() {
                 <h1>
                     ANIME LIST
                 </h1>
-                <p style = {{fontSize:"2rem"}}>
+                <p>
                     Anime list is a MERN (MongoDB + Express.js + React.js + Node.js) stack web application. 
                     You can add your own favorite animes to your list within the web application and 
                     help by adding anime that are not on the list
