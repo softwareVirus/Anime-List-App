@@ -5,16 +5,18 @@ import '../css/Explore.css'
 
 function Explore({profile}) {
     const [animeInfos,setAnimeInfos] = useState([]);
-    let data = []
+    const [data,setData] = useState([]);
     const [reverseOrderName,setReverseOrderName] =useState(true);
     const [reverseOrderPoint,setReverseOrderPoint] =useState(false);
     console.log(data)
     const handleSortName = () => {
-        data = (data.sort(function(a,b) {return reverseOrderName ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name)}))
+        setData(data.sort(function(a,b) {return reverseOrderName ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name)}))
+        setAnimeInfos(data.filter(item => animeInfos.includes(item)))
         setReverseOrderName(!reverseOrderName);
     }
     const handleSortPoint = () => {
-        data = (data.sort(function(a,b) {return reverseOrderPoint ? a.point-b.point : b.point-a.point}))
+        setData(data.sort(function(a,b) {return reverseOrderPoint ? a.point-b.point : b.point-a.point}))
+        setAnimeInfos(data.filter(item => animeInfos.includes(item)))
         setReverseOrderPoint(!reverseOrderPoint);
         console.log(animeInfos)
     }
@@ -27,7 +29,7 @@ function Explore({profile}) {
     }
     useEffect(()=>{
         axios.get('http://localhost:5000/u/getAllInfos')
-        .then(response => {console.log(response.data);data = response.data;setAnimeInfos((response.data))})
+        .then(response => {console.log(response.data,data);setData(response.data);setAnimeInfos((response.data))})
         .catch(err => console.log(err))
     },[])
     return(
