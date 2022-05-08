@@ -6,7 +6,7 @@
   ```
     create .env folder 
     add 
-      ATLAS_URI=mongodb+srv://trial_user:123456789A@cluster0.8sf1t.mongodb.net/ANIME_WEB_SITE?retryWrites=true&w=majority
+      ATLAS_URI=mongodb+srv://<username>:<password>@cluster0.8sf1t.mongodb.net/<database-name>?retryWrites=true&w=majority
   ```
 
 
