@@ -44,7 +44,7 @@ export default function EditProfile({profile,setProfile}) {
                 setErrMes1("")
             return;
         }
-        axios.post('http://localhost:5000/u/updateProfile',({
+        axios.post('hhttps://anime-sed.herokuapp.com/u/updateProfile',({
             "img": url,
             "name": e.target.name.value !== "" ? e.target.name.value : profile.name,
             "surname" : e.target.surname.value !== "" ? e.target.surname.value : profile.surname,
