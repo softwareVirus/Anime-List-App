@@ -46,7 +46,7 @@ const AnimeCard = (props) => {
                     </div>
                 </div>
                 <div className="anime-card-point">
-                    <h1>&#9733;{props.point}</h1>
+                    <h1>&#9733;{point}</h1>
                 </div>
                 <div className="anime-card-add-list">
                     <input type="submit" value={props.delete ? "Delete" : "Add List"} name={props.delete ? "delete" : "add-list"} onClick={handleAddOrDelete} />
