@@ -31,7 +31,7 @@ const AnimeCard = (props) => {
         }
             
     }
-    const point = 
+    const point = Math.floor(props.point*100)/100;
     return(
         <div className="anime-card-container">
             <div className="anime-card-image">
