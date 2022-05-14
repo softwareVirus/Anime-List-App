@@ -45,7 +45,7 @@ export default function AddAnime() {
     }
     const handleDescription = (e) => {
         if(e.target.value === "") {
-            setErrMes3("There should be a name")
+            setErrMes3("There should be a description")
         } else {
             setErrMes3("")
         }
