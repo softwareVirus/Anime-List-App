@@ -31,10 +31,9 @@ const AnimeCard = (props) => {
         }
             
     }
-    const name = props.name
+    const point = 
     return(
-        <>{name != null ?
-            <div className="anime-card-container">
+        <div className="anime-card-container">
             <div className="anime-card-image">
                 <img src={props.image.src} alt={props.image.alt} width="100px"/>
             </div>
@@ -52,9 +51,7 @@ const AnimeCard = (props) => {
                 <div className="anime-card-add-list">
                     <input type="submit" value={props.delete ? "Delete" : "Add List"} name={props.delete ? "delete" : "add-list"} onClick={handleAddOrDelete} />
                 </div>
-        </div>
-        :<></>
-    }</>
+            </div>
     );
 }
 
