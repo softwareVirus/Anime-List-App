@@ -14,7 +14,7 @@ export default function AnimeList({profile}) {
     return(
         <div className="anime-list-container">
             {animeInfos.map(item => {
-                return <AnimeCard key={item._id} setAnimeInfos={setAnimeInfos} _id={item._id} user={profile} name={item.name} image={item.image} description={item.description} point={Math.floor(item.point*100)/100} delete={true}/>
+                return <AnimeCard key={item._id} setAnimeInfos={setAnimeInfos} _id={item._id} user={profile} name={item.name} image={item.image} description={item.description} point={item.point} delete={true}/>
             })}
         </div>
     );
