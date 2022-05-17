@@ -5,7 +5,6 @@ import EditProfile from '../components/EditProfile'
 import '../css/Profile.css'
 export default function Profile({profile,setProfile}) {
     const [editProfile,setEditeProfile] = useState(false);
-    const ian = {src:"https://i.pinimg.com/736x/16/d4/c8/16d4c86031908fb76cad486905218526.jpg",alt:"anime"};
     const handleAnimeList = (e) => {
         e.preventDefault()
         setEditeProfile(false)
