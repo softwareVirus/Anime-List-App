@@ -62,7 +62,7 @@ export default function EditProfile({profile,setProfile}) {
                 surname: response.data.surname,
                 email: response.data.email
             }
-            console.log(data)
+            console.log(response)
             setProfile(data)
             setUpdateSucces("You update your profile")
         })
