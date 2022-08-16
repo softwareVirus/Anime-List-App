@@ -1,5 +1,5 @@
 
-# MERN project - Anime-List-App
+# MERN project  Anime-List-App
 
 
 ## To Access mongodb 
@@ -26,4 +26,4 @@
   
   npm start
 ```
-The web app url : 'http://localhost:3000'
+The web app url : 'anime-list-app.vercel.app'
