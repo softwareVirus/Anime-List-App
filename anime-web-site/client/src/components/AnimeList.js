@@ -5,7 +5,7 @@ import AnimeCard from "./AnimeCard";
 export default function AnimeList({profile}) {
     const [animeInfos,setAnimeInfos] = useState([])
     useEffect(() => {
-        axios.post('https://anime-sed.herokuapp.com/u/listMyList',{
+        axios.post('https://anime-aapp.onrender.com/u/listMyList',{
             "email":profile.email
         })
         .then((response) => setAnimeInfos(response.data))
