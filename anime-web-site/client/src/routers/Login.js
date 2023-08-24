@@ -10,7 +10,7 @@ function Login({setProfile}) {
     const [errorMessage,setErrorMessage] = useState('');
     const handleLogin = (e) => {
         e.preventDefault()
-        axios.post('https://anime-aapp.onrender.com/u/login',{
+        axios.post('https://anime-list-app-5k6a-984cn5kad-softwarevirus.vercel.app/u/login',{
             "email":e.target.email.value,
             "password":e.target.password.value
         })
