@@ -68,7 +68,7 @@ export default function AddAnime() {
             setErrMes("The point value must be less equal to 10")
             return;
         }
-        axios.post('https://anime-aapp.onrender.com/u/addAnimeCard',{
+        axios.post('https://anime-list-app-5k6a-984cn5kad-softwarevirus.vercel.app/u/addAnimeCard',{
             "src" :url.src,
             "alt":url.alt === undefined ? "anime-photo" : url.alt,
             "name": e.target.name.value,
