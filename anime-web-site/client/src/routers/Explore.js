@@ -28,7 +28,7 @@ function Explore({profile}) {
         }))
     }
     useEffect(()=>{
-        axios.get('https://anime-aapp.onrender.com/u/getAllInfos')
+        axios.get('https://anime-list-app-5k6a-984cn5kad-softwarevirus.vercel.app/u/getAllInfos')
         .then(response => {console.log(response.data,data);setData(response.data);setAnimeInfos((response.data))})
         .catch(err => console.log(err))
     },[])
