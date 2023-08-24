@@ -25,7 +25,7 @@ function Signup({setProfile}) {
             return;
         }
         console.log(e.target)
-        axios.post("https://anime-aapp.onrender.com/u/signup",{
+        axios.post("https://anime-list-app-5k6a-984cn5kad-softwarevirus.vercel.app/u/signup",{
             "img":null,
             "name": e.target.name.value,
             "surname": e.target.surname.value,
