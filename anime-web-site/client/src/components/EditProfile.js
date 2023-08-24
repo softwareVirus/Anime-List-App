@@ -44,7 +44,7 @@ export default function EditProfile({profile,setProfile}) {
                 setErrMes1("")
             return;
         }
-        axios.post('https://anime-aapp.onrender.com/u/updateProfile',({
+        axios.post('https://anime-list-app-5k6a-984cn5kad-softwarevirus.vercel.app/u/updateProfile',({
             "img": url,
             "name": e.target.name.value !== "" ? e.target.name.value : profile.name,
             "surname" : e.target.surname.value !== "" ? e.target.surname.value : profile.surname,
