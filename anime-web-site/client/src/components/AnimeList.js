@@ -5,7 +5,7 @@ import AnimeCard from "./AnimeCard";
 export default function AnimeList({profile}) {
     const [animeInfos,setAnimeInfos] = useState([])
     useEffect(() => {
-        axios.post('https://anime-aapp.onrender.com/u/listMyList',{
+        axios.post('https://anime-list-app-5k6a-984cn5kad-softwarevirus.vercel.app/u/listMyList',{
             "email":profile.email
         })
         .then((response) => setAnimeInfos(response.data))
